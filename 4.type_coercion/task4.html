@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 4: Type Coercion</title>
+    <script>
+      window.onload = function () {
+        // Declare and initialize variables
+        let numberString = "10";
+        let actualNumber = 5;
+
+        try {
+          // Perform operations and log results to the console
+          console.log("Addition (+):", parseInt(numberString) + actualNumber); // 15 - string converted to number
+          console.log(
+            "Subtraction (-):",
+            parseInt(numberString) - actualNumber
+          ); // 5 - string converted to number
+          console.log(
+            "Multiplication (*):",
+            parseInt(numberString) * actualNumber
+          ); // 50 - string converted to number
+          console.log("Division (/):", parseInt(numberString) / actualNumber); // 2 - string converted to number
+        } catch (error) {
+          console.error("An error occurred:", error);
+        }
+      };
+    </script>
+  </head>
+  <body></body>
+</html>
